@@ -1,0 +1,26 @@
+<div id="select">
+    <table>
+        <tr>
+            <td>ACÃO</td>
+            <td>ID</td>
+            <td>NOME</td>
+            <td>DESCRICAO</td>
+        </tr>
+
+        {{#data}}
+            <tr>
+                <td>
+                    <a href='update/{{id}}'>Atualizar</a>
+                    <a href='deletar/{{id}}' class='deletar'>Deletar</a>
+                </td>
+                <td>{{id}}</td>
+                <td>{{name}}</td>
+                <td>{{descricao}}</td>
+            </tr>
+        {{/data}}
+    </table>
+    <div id="voltar">
+        <a href="http://localhost:3000/">VOLTAR</a>
+    </div>
+    
+</div>
